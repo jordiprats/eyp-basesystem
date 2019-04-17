@@ -1,4 +1,4 @@
-Facter.add(:eyp_disk_type) do
+Facter.add(:eyp_basesystem_disk_type) do
   # Fact should be confined to only linux servers that have the lvs command
   confine do
     Facter.value('kernel') == 'Linux' &&

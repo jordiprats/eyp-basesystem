@@ -1,7 +1,4 @@
-class system::params {
-
-  $package_name='system'
-  $service_name='system'
+class basesystem::params {
 
   case $::osfamily
   {
@@ -23,10 +20,7 @@ class system::params {
         {
           case $::operatingsystemrelease
           {
-            /^14.*$/:
-            {
-            }
-            /^16.*$/:
+            /^1[468].*$/:
             {
             }
             default: { fail("Unsupported Ubuntu version! - ${::operatingsystemrelease}")  }

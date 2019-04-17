@@ -1,7 +1,7 @@
 
 require 'spec_helper'
 
-describe 'system' do
+describe 'basesystem' do
   context 'supported operating systems' do
     on_supported_os.each do |os, facts|
       context "on #{os}" do
@@ -9,11 +9,11 @@ describe 'system' do
           facts
         end
 
-        context "system class without any parameters" do
+        context "basesystem class without any parameters" do
           it { is_expected.to compile.with_all_deps }
 
-          it { is_expected.to contain_service('system') }
-          it { is_expected.to contain_package('system').with_ensure('present') }
+          it { is_expected.to contain_service('basesystem') }
+          it { is_expected.to contain_package('basesystem').with_ensure('present') }
         end
       end
     end

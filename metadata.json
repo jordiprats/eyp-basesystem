@@ -1,5 +1,5 @@
 {
-  "name": "eyp-system",
+  "name": "eyp-basesystem",
   "version": "0.1.0",
   "author": "eyp",
   "summary": null,
@@ -34,7 +34,7 @@
     },
     {
       "operatingsystem": "Ubuntu",
-      "operatingsystemrelease": [ "14.04", "16.04" ]
+      "operatingsystemrelease": [ "14.04", "16.04", "18.04" ]
     }
   ],
   "requirements": [

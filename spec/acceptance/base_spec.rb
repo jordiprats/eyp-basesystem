@@ -1,14 +1,14 @@
 require 'spec_helper_acceptance'
 require_relative './version.rb'
 
-describe 'system class' do
+describe 'basesystem class' do
 
   context 'basic setup' do
     # Using puppet_apply as a helper
     it 'should work with no errors' do
       pp = <<-EOF
 
-      class { 'system': }
+      class { 'basesystem': }
 
       EOF
 
