@@ -2,7 +2,7 @@
   "name": "eyp-basesystem",
   "version": "0.1.0",
   "author": "eyp",
-  "summary": null,
+  "summary": "provides facts with extra info of the base system",
   "license": "Apache-2.0",
   "source": "https://github.com/NTTCom-MS/eyp-system",
   "project_page": "https://github.com/NTTCom-MS/eyp-system",
